@@ -36,7 +36,7 @@ font-style: normal;
 }
 
 body{
-  width: 100%;
+  min-width: 100%;
   overflow-x:hidden;
 }
 
@@ -716,4 +716,48 @@ text-transform: uppercase;
      .watermark{
        visibility: hidden;
      }
+     .flex-container{
+        flex-wrap: wrap;
+        height: 100vh;
+     }
+     .text-content {
+         height: 95vh;
+     }
+     #home {
+        height: 60vh;
+     }
+     .contents{
+        flex-direction: row;
+        justify-content: center;
+   	flex-wrap: wrap;
+      }
+     .contents div{
+   	height: 25vh;
+      }
+     .contents div h3{
+        padding-top: 5vh;
+      }
+     .works-container{
+        margin: 0px;
+  	flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+      .works-container div{
+	width: 20vh;
+      }
+      .works{
+         height: 70vh;
+       }
+      .team-container{
+ 	flex-wrap: wrap;
+      }
+      #team {
+         height: 170vh;
+      }
+      .col1{
+	width: 100%;
+      }
+      .col2, .col3{
+         visibility: hidden;
+      }
 }
