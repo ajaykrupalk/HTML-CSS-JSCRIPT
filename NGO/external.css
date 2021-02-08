@@ -691,7 +691,7 @@ text-transform: uppercase;
   }
 }
 
-@media screen and (max-width: 770px){
+@media (min-width: 320px) and (max-width: 770px){
     body{
       overflow-x: hidden;
     }
