@@ -703,4 +703,17 @@ text-transform: uppercase;
       padding: 5px;
       border-radius: 5px;
     }
+    .banner-text h1 {
+  	font-size: 12vw;
+     }
+
+    .banner-text p {
+  	font-size: 9.80vw;
+     }
+     .button{
+        visibility: hidden;
+     }
+     .watermark{
+       visibility: hidden;
+     }
 }
