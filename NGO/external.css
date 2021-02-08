@@ -691,8 +691,16 @@ text-transform: uppercase;
   }
 }
 
-@media screen and (min-width: 425px and max-width: 860px){
-    #home{
-      background-color: red;
+@media screen and (max-width: 770px){
+    body{
+      overflow-x: hidden;
+    }
+    .menu-background{
+     visibility: hidden;
+    }
+    .dropbtn {
+      background-color: black;
+      padding: 5px;
+      border-radius: 5px;
     }
 }
