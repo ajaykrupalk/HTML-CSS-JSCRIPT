@@ -1,0 +1,698 @@
+@font-face {
+font-family: 'D-DIN Regular';
+src: url('D-DIN.eot');
+src: url('D-DIN.eot?#iefix') format('embedded-opentype'),
+url('D-DIN.woff') format('woff'),
+url('D-DIN.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+  font-family: 'D-DIN Bold';
+  src: url('D-DIN-Bold.eot');
+  src: url('D-DIN-Bold.eot?#iefix') format('embedded-opentype'),
+    url('D-DIN-Bold.woff') format('woff'),
+    url('D-DIN-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+font-family: 'D-DIN Condensed';
+src: url('D-DINCondensed.eot');
+src: url('D-DINCondensed.eot?#iefix') format('embedded-opentype'),
+url('D-DINCondensed.woff') format('woff'),
+url('D-DINCondensed.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+*{
+  margin:0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+  overflow-x:hidden;
+}
+
+#home {
+  height: 80vh;
+  background-color: #F0F8FF;
+}
+
+.top-nav
+{
+position: absolute;
+top:32px;
+left:50px;
+font: 16px D-DIN Bold,Arial,Verdana,sans-serif;
+font-weight:500;
+}
+
+.top-nav a {
+  height:25px;
+  text-align:left;
+  text-transform:uppercase;
+  text-decoration: none;
+  display: inline-block;
+  margin:0 12px;
+  color: #000;
+  z-index: 1;
+  position: relative;
+}
+
+.top-nav a span {
+  border-bottom: 2.5px orange solid;
+  width: 0;
+  height: 80%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right:0;
+  z-index: -1;
+  transition: width 0.25s;
+}
+
+.top-nav a:hover span {
+  width: 100%;
+}
+
+.banner-text {
+  text-align: left;
+  color: #000;
+  padding-top: 180px;
+  position:relative;
+  top:0;
+  left:50px;
+  right:0;
+  font-family:D-DIN Bold,Arial,Verdana,sans-serif;
+}
+
+.banner-text h1 {
+  font-size: 90px;
+  text-transform: uppercase;
+}
+
+.banner-text p {
+  font-size: 73.5px;
+  text-transform:uppercase;
+  color: orange;
+}
+
+.button{
+position:relative;
+top:30px;
+left:50px;
+font: 14px D-DIN Bold,Arial,Verdana,sans-serif;
+font-weight:500;
+text-transform: uppercase;
+}
+
+.button a {
+  width:100px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 10px;
+  padding:12px 0;
+  text-align:center;
+  text-transform:uppercase;
+  color: #000;
+  border: black .5px solid;
+  position: relative;
+  z-index: 1;
+}
+
+.button a span {
+  width:0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right:0;
+  background: #000;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.button a:hover span {
+  width: 100%;
+}
+
+.button a:hover {
+  color: #fff;
+}
+
+.current-project{
+  position: absolute;
+  top: 180px;
+  right: 80px;
+  height: 250px;
+  width: 400px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 10px;
+}
+
+.current-project h4{
+  color: orange;
+  text-transform: uppercase;
+  font: 12px D-DIN Bold,Arial,Verdana,sans-serif;
+}
+
+.container {
+  width: 380px;
+  height: 3vh;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+}
+
+.progress-bar{
+  padding: 2px;
+  text-align: center;
+  height: 20px;
+  width: 70%;
+  border-radius: 10px;
+  background-color: orange;
+  color: white;
+  animation: progress 6s;
+  font: 14px D-DIN Bold,Arial,Verdana,sans-serif;
+}
+
+@keyframes progress{
+  from{
+    width: 20%;
+  }
+  to{
+    width: 70%;
+  }
+}
+
+.current-project h3{
+  padding-top: 15px;
+  text-transform: uppercase;
+  font: 25px D-DIN Bold,Arial,Verdana,sans-serif;
+}
+
+.current-project p{
+  text-align: justify;
+  text-justify: inter-character;
+  padding-top: 7px;
+  font: 18px D-DIN Regular,Arial,Verdana,sans-serif;
+  color: #353535;
+  width: 380px;
+}
+
+.menu-background{
+  position: fixed;
+  top: -50px;
+  right: -20px;
+  background-color: black;
+  height: 20vh;
+  width: 20vh;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+#menu{
+  z-index: 1;
+  position:fixed;
+  top:32px;
+  right:30px;
+}
+
+.dropbtn {
+  z-index: 1;
+  font: 14px D-DIN Bold,Arial,Verdana,sans-serif;
+  color: white;
+  background: none;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  backdrop-filter: blur(5px);
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font: 36px D-DIN Bold,Arial,Verdana,sans-serif;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  right: 30px;
+  top: -5px;
+  font-size: 60px;
+}
+
+.flex-container{
+  align-items: baseline;
+  display: flex;
+  flex-direction: row;
+  height: 30vh;
+  background-color: #ebecf0;
+  background-size: cover;
+  justify-content: space-evenly;
+}
+
+.flex-container div{
+  text-align: center;
+  position: relative;
+  top: -60px;
+  color: black;
+  height: 250px;
+  width: 400px;
+  background: white;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.flex-container div img{
+  height: 10vh;
+  padding: 10px;
+}
+.flex-container div h3{
+  color: orange;
+  padding-top: 10px;
+  text-align: center;
+  font: 30px D-DIN Bold,Arial,Verdana,sans-serif;
+}
+.flex-container div p{
+  color: #353535;
+  text-align: left;
+  padding: 20px;
+  font: 18px D-DIN Regular,Arial,Verdana,sans-serif;
+}
+
+.text-content {
+  height: 50vh;
+  background: #ebecf0;
+}
+
+.text-content h2{
+  padding: 5px;
+  text-transform: uppercase;
+  text-align: center;
+  font: 2.8em D-DIN Bold,Arial,Verdana,sans-serif;
+}
+
+.text-content a h2{
+  color:orange;
+}
+
+.text-content p{
+  padding-top: 3vh;
+  padding-left: 10vh;
+  text-align: justify;
+  text-justify: inter-word;
+  font: 18px D-DIN Regular,Arial,Verdana,sans-serif;
+}
+
+.text-content img{
+  float: right;
+  padding: 5vh;
+  height: 250px;
+}
+
+.parallax{
+  background-image: url(slide1.jpg);
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0,0,0,0.7);
+  background-blend-mode: darken;
+}
+
+.contents{
+  align-items: baseline;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.contents div{
+  text-align: center;
+  color: orange;
+  height: 250px;
+  width: 800px; 
+}
+
+.contents div h3{
+  padding-top: 125px;
+  font: 50px D-DIN Bold,Arial,Verdana,sans-serif;
+  opacity: 1.0;
+}
+
+.contents div h4{
+  color: white;
+  font: 50px D-DIN Bold,Arial,Verdana,sans-serif;
+  opacity: 1.0;
+}
+
+#last-year{
+  background-color: rgb(248, 244, 240);
+  height: 65vh;
+}
+
+.head h2{
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 20px;
+  font: 2.8em D-DIN Bold,Arial,Verdana,sans-serif;
+}
+
+.theme-colored-text{
+  color: orange; 
+}
+
+.head p{
+  padding-top: 20px;
+  text-align: center;
+  font: 18px D-DIN Regular,Arial,Verdana,sans-serif;
+}
+
+.services-flex-container{
+  margin-top: 20px;
+  align-items: baseline;
+  display: flex;
+  flex-direction: row;
+  height: 40vh;
+  justify-content: center;
+}
+
+.services-flex-container div{ 
+  height: 250px;
+  width: 400px;
+  margin-left: 25px;
+  text-align: center;
+}
+
+.services-flex-container div img{
+  height: 10vh;
+}
+
+.services-flex-container div h4{
+  color: black;
+  padding-top: 10px;
+  text-align: center;
+  font: 30px D-DIN Bold,Arial,Verdana,sans-serif;
+}
+
+.services-flex-container div p{
+  color: #353535;
+  text-align: left;
+  padding: 20px;
+  font: 18px D-DIN Regular,Arial,Verdana,sans-serif;
+}
+
+#footer {
+  height: 50vh;
+  background: #1e262d;
+}
+
+.footer-flex-container {
+  color: white;
+  padding-top: 10px;
+  align-items: baseline;
+  display: flex;
+  flex-direction: row;
+  justify-contents: space-evenly;
+}
+
+.footer-flex-container div {
+  padding-left: 10px;
+  padding-top: 10px;
+  margin-left: 40px;
+  margin-right: 80px;
+  height: 40vh;
+  width: 30vh;
+}
+
+.footer-flex-container h4{
+   font: 35px D-DIN Bold,Arial,Verdana,sans-serif;
+}
+.footer-flex-container p {
+  font: 18px D-DIN Regular,Arial,Verdana,sans-serif;
+  padding-top: 10px;
+  color: rgb(248, 244, 240);
+  line-height: 1.8;
+}
+
+.footer-flex-container ul li {
+  font: 18px D-DIN Regular,Arial,Verdana,sans-serif;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.col1 h4{
+  text-transform: uppercase;
+  font-size: 30px;
+  color: orange;
+}
+
+.col2 h4, .col3 h4{
+  font-size: 25px;
+  color: orange;
+}
+
+.footer-flex-container ul li:hover{
+  color: orange;
+}
+
+.watermark{
+  position: absolute;
+  margin: 0 auto;
+  top: 100px;
+  left: 150px;;
+  z-index-1;
+  color: #bebebe;
+  opacity: 0.2;
+  font: 25em D-DIN Bold,Arial,Verdana,sans-serif;
+}
+
+.flex-container div:hover{
+  border: orange 2px solid;
+}
+
+#team{
+  height: 80vh;
+  background-color: #ebf2fa;
+}
+
+#team h2{
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 20px;
+  font: 2.8em D-DIN Bold,Arial,Verdana,sans-serif;
+}
+
+.team-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.team-container div{
+  margin-top: 20px;
+  width: 35vh;
+  height: 48.3vh;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.team-container div img{
+  width: 100%;
+  height: 170px;
+}
+
+.team-container div h4{
+  padding: 20px;
+  font: 40px D-DIN Bold,Arial,Verdana,sans-serif;
+}
+
+.team-container div p{
+  font: 22px D-DIN Regular,Arial,Verdana,sans-serif;
+}
+
+.team-container div button{
+  margin-top: 50px;
+  background-color: black;
+  border: black 1px solid;
+  color: white;
+  padding: 8px;
+  width: 100%;
+  font: 20px D-DIN Bold,Arial,Verdana,sans-serif;
+}
+
+.works{
+  height: 40vh;
+}
+
+.works h2{
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 20px;
+  font: 2.8em D-DIN Bold,Arial,Verdana,sans-serif;
+}
+
+#donate{
+ height: 40vh;
+ max-width: 100%;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-color: rgba(0,0,0,0.7);
+ background-blend-mode: darken;
+ text-align: center;
+ color: white;
+}
+
+#donate h4{
+  padding-top: 30px;
+  font: 5vw D-DIN Bold,Arial,Verdana,sans-serif;
+}
+
+#donate p{
+  padding: 20px;
+  font: 1.3vw D-DIN Regular,Arial,Verdana,sans-serif;
+}
+
+#donate button{
+  margin-top: 30px;
+  height: 6vh;
+  width: 20vh;
+  text-transform: uppercase;
+  font: 16px D-DIN Bold,Arial,Verdana,sans-serif;
+  background-color: orange;
+  border: none;
+  color: white;
+}
+
+#donate button:hover{
+  background-color: white;
+  border: orange 3px solid;
+  color: orange;
+}
+
+.works-container{
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.works-container div{
+  margin: 2px;
+  border: 1px solid black;
+  height: 200px;
+  width: 400px;
+  background-color: rgba(0,0,0,0.7);
+  background-blend-mode: darken;
+  background-size: cover;
+}
+
+.works-container h4{
+  padding-top: 70px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font: 20px D-DIN Bold,Arial,Verdana,sans-serif;
+}
+
+@media screen and (max-width: 1220px) {
+  .current-project{
+    visibility: hidden;
+  }
+  .flex-container div{
+    margin: 2px;
+  }
+  .text-content{
+     height: 50vh;
+   }
+  .text-content p{
+    width: 700px;
+  }
+  #last-year{
+    height: 70vh;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .text-content {
+    height: 65vh;
+  }
+  #last-year{
+    height: 100vh;
+  }
+  .services-flex-container{
+     flex-wrap: wrap;
+  }
+  .services-flex-container div{
+       margin: 10px;  
+  }
+  .team-container{
+    justify-content: center;
+  }
+  .team-container div{
+     margin: 5px;
+   } 
+  .team-container div button{
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .text-content {
+    height: 75vh;
+  }
+  #last-year{
+    height: 180vh;
+  }
+  #donate p{
+   padding: 20px;
+   font: 2vw D-DIN Regular,Arial,Verdana,sans-serif;
+  }
+}
+
+@media screen and (min-width: 425px and max-width: 860px){
+    #home{
+      background-color: red;
+    }
+}
