@@ -636,7 +636,7 @@ text-transform: uppercase;
   font: 20px D-DIN Bold,Arial,Verdana,sans-serif;
 }
 
-@media (min-width: 320px) and (max-width: 425px)
+@media (max-width: 700px)
 	{
 		*{
 			background-color: red !important;
