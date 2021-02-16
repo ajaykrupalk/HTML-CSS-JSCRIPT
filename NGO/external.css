@@ -35,6 +35,10 @@ font-style: normal;
   box-sizing: border-box;
 }
 
+html{
+  overflow-x: hidden;
+}
+
 body{
   min-width: 100%;
   overflow-x:hidden;
@@ -47,6 +51,7 @@ body{
 
 .top-nav
 {
+max-width: 1280px;
 position: absolute;
 top:32px;
 left:50px;
@@ -636,134 +641,60 @@ text-transform: uppercase;
   font: 20px D-DIN Bold,Arial,Verdana,sans-serif;
 }
 
-@media (max-width: 700px)
-	{
-		*{
-			background-color: red !important;
-		}
-}
-/*@media screen and (max-width: 1220px) {
+@media (max-width: 450px){
+  body{
+	width: 127vh;
+	overflow-x: hidden;
+  }
   .current-project{
-    visibility: hidden;
-  }
-  .flex-container div{
-    margin: 2px;
-  }
-  .text-content{
-     height: 50vh;
+	display: none;
    }
-  .text-content p{
-    width: 700px;
+  .watermark{
+  font-size: 20em;
   }
-  #last-year{
-    height: 70vh;
+  .menu-background{
+   display: none;
   }
+  .dropbtn {
+     display: none;
+   }
+
+.flex-container{
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 75vh;
 }
 
-@media screen and (max-width: 1080px) {
-  .text-content {
-    height: 65vh;
-  }
-  #last-year{
-    height: 100vh;
-  }
-  .services-flex-container{
-     flex-wrap: wrap;
-  }
-  .services-flex-container div{
-       margin: 10px;  
-  }
-  .team-container{
-    justify-content: center;
-  }
-  .team-container div{
-     margin: 5px;
-   } 
-  .team-container div button{
-    visibility: hidden;
-  }
+.flex-container div{
+ margin: 5px;
 }
 
-@media screen and (max-width: 860px) {
-  .text-content {
-    height: 75vh;
-  }
-  #last-year{
-    height: 180vh;
-  }
-  #donate p{
-   padding: 20px;
-   font: 2vw D-DIN Regular,Arial,Verdana,sans-serif;
-  }
+.text-content {
+  height: 70vh;
 }
 
-@media (min-width: 320px) and (max-width: 770px){
-    body{
-      overflow-x: hidden;
-    }
-    .menu-background{
-     visibility: hidden;
-    }
-    .dropbtn {
-      background-color: black;
-      padding: 5px;
-      border-radius: 5px;
-    }
-    .banner-text h1 {
-  	font-size: 12vw;
-     }
+.head h2{
+  padding-top: 30px;
+}
 
-    .banner-text p {
-  	font-size: 9.80vw;
-     }
-     .button{
-        visibility: hidden;
-     }
-     .watermark{
-       visibility: hidden;
-     }
-     .flex-container{
-        flex-wrap: wrap;
-        height: 100vh;
-     }
-     .text-content {
-         height: 95vh;
-     }
-     #home {
-        height: 60vh;
-     }
-     .contents{
-        flex-direction: row;
-        justify-content: center;
-   	flex-wrap: wrap;
-      }
-     .contents div{
-   	height: 25vh;
-      }
-     .contents div h3{
-        padding-top: 5vh;
-      }
-     .works-container{
-        margin: 0px;
-  	flex-wrap: wrap;
-        justify-content: space-evenly;
-      }
-      .works-container div{
-	width: 20vh;
-      }
-      .works{
-         height: 70vh;
-       }
-      .team-container{
- 	flex-wrap: wrap;
-      }
-      #team {
-         height: 170vh;
-      }
-      .col1{
-	width: 100%;
-      }
-      .col2, .col3{
-         visibility: hidden;
-      }
-}*/
+#last-year{
+  height: 180vh;
+}
+
+.services-flex-container{
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#donate h4{
+  padding-top: 30px;
+  font: 8vh D-DIN Bold,Arial,Verdana,sans-serif;
+}
+
+#donate p{
+  padding: 20px;
+  font: 2.5vh D-DIN Regular,Arial,Verdana,sans-serif;
+}
+
+}
