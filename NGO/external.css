@@ -641,7 +641,7 @@ text-transform: uppercase;
   font: 20px D-DIN Bold,Arial,Verdana,sans-serif;
 }
 
-@media (max-width: 450px){
+@media (min-width: 0px) and (max-width: 450px){
   body{
 	width: 127vh;
 	overflow-x: hidden;
