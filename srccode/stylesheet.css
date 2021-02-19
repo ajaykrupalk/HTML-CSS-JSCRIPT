@@ -1,0 +1,560 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  position: sticky;
+  top: 0;
+  height: 50px;
+  background-color: white;
+  box-shadow: 0 0 10px 0 #d3d3d3;
+}
+
+.nav-flex-container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20vh;
+}
+
+.nav-flex-container div {
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+.git img {
+  height: 30px;
+  width: 30px;
+  opacity: 0.5;
+}
+
+.git img:hover {
+  opacity: 0.9;
+}
+
+.search-container input {
+  border-radius: 10px;
+  width: 50vh;
+}
+
+.search-container input[type=text] {
+  background-color: #e9ecef;
+  padding: 6px;
+  font-size: 14px;
+  border: none;
+}
+
+#home {
+  height: 85vh;
+}
+
+.home-flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.home-text {
+  margin-top: 180px;
+  margin-left: 20vh;
+  font-family: 'Hammersmith One', sans-serif;
+  width: 500px;
+}
+
+.home-text h1 {
+  color: #1d3557;
+  font-size: 7vh;
+}
+
+.home-text p {
+  padding-top: 10px;
+  line-height: 1.8;
+  color: #463f3a;
+  font-size: 16px;
+}
+
+.home-pic img {
+  padding-top: 10vh;
+}
+
+#project {
+  height: 30vh;
+}
+
+.projects-flex-container {
+  display: flex;
+  padding-left: 20vh;
+  font-family: 'Hammersmith One', sans-serif;
+  margin-right: 10px;
+}
+
+.heading h3 {
+  color: #1d3557;
+  padding-top: 4.5vh;
+  font-size: 3vh;
+}
+
+.heading p {
+  padding-top: 5px;
+  line-height: 1.4;
+  color: #463f3a;
+  font-size: 15px;
+}
+
+.titles {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10vh;
+  flex-wrap: wrap;
+}
+
+.titles div {
+  background-color: #edf2fb;
+  width: 130px;
+  height: 20vh;
+  margin: 5px;
+  padding: 26px 16px 24px 16px;
+  border-radius: 5px;
+  transition: transform .2s;
+}
+
+.titles div:hover{
+  transform: scale(1.05);
+}
+
+.titles div img {
+  height: 30;
+  width: 30;
+}
+
+.titles div h4 {
+  color: #1d3557;
+  padding-top: 7vh;
+  font: 18px 'Hammersmith One', sans-serif;
+}
+
+.titles .hide {
+  cursor: default;
+}
+
+.titles .hide h4{
+    text-align: center;
+    font: 2.7vh 'Hammersmith One', sans-serif;
+}
+
+.flex-container-container {
+  display: none;
+}
+
+.flex-container{
+  display: flex;
+  flex-direction: row;
+  margin-left: 62.6vh;
+  flex-wrap: wrap;
+  animation: slide;
+  animation-duration: 0.5s;
+}
+
+.flex-container div{
+  background-color: #edf2fb;
+  width: 130px;
+  height: 20vh;
+  margin: 5px;
+  padding: 26px 16px 24px 16px;
+  border-radius: 5px;
+}
+
+.flex-container div img {
+  height: 30;
+  width: 30;
+}
+
+.flex-container div h4 {
+  color: #1d3557;
+  padding-top: 7vh;
+  font: 18px 'Hammersmith One', sans-serif;
+}
+
+@keyframes slide{
+  from { top: -20vh; opacity: 0}
+  to { top: 10vh; opacity: 1.0}
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgb(220,220,220);
+  background-color: rgba(220,220,220, 0.7);
+  backdrop-filter: blur(2px);
+}
+
+/* Modal Content */
+.modal-content {
+  margin-right: 10vh;
+  margin-left: 10vh;
+  border-radius: 2vh 2vh 0px 0px;
+  position: fixed;
+  bottom: 0;
+  height: 95vh;
+  width: 180vh;
+  background-color: #fefefe;
+  animation-name: slideIn;
+  animation-duration: 0.4s;
+  box-shadow: 0 0 15px 0 grey;
+  overflow-x: hidden;
+}
+
+@keyframes slideIn {
+  from {bottom: -900px; opacity: 0.7}
+  to {bottom: 0; opacity: 1}
+}
+
+.modalheader {
+  position: fixed;
+  border-radius: 2vh 2vh 0px 0px;
+  background-color: black;
+  height: 5vh;
+  width: 180vh;
+  color: black;
+  z-index: 9999;
+}
+
+.modalheader span {
+  float: right;
+  height: 3vh;
+  padding-right: 15px;
+  font: 30px Graphik,Helventica Neue,Helvetica,Arial,sans-serif;
+  cursor: default;
+}
+
+.modalheader span:hover,focus{
+  color: white;
+}
+
+.footer{
+  text-align: center;
+  margin-top: 15vh;
+  height: 1.5vh;
+  background-color: #1d3557;
+  padding: 10px;
+  color: #f5f3f4;
+  font: 12px Graphik,Helventica Neue,Helvetica,Arial,sans-serif;
+}
+
+.modal-flexbox{
+  display: flex;
+  flex-direction: row;
+}
+
+.modal-flexbox div{
+  height: 75vh;
+  width: 250vh;
+}
+
+.code{
+  padding-top: 2vh;
+  margin-top: 2vh;
+}
+
+.code-content{
+  margin-left: 5vh;
+  border-bottom: 2px solid black;
+  width: 7vh;
+  font: 25px 'Hammersmith One', sans-serif;
+}
+
+.right-container{
+  float: right;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  margin-right: 5vh;
+}
+
+.right-container div{
+  margin-right: 2vh; 
+}
+
+.right-container div img{
+  height: 15px;
+  width: 15px;
+}
+
+.right-container div h5{
+  padding-top: 1vh;
+  font-size: 12px;
+  font: 14px 'Hammersmith One', sans-serif;
+}
+
+
+.modal-content::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.gist{
+ 	margin: 5vh;
+}
+
+.gist::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.gist {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.modal-title{
+  color: white;
+  font-family: 'Hammersmith One', sans-serif;
+}
+
+.modal-title h1{
+	padding-top: 30vh;
+	padding-left: 10vh;
+        font-size: 6vh;
+}
+
+.modal-title p{
+	padding-top: 5vh;
+	padding-left: 10vh;
+        font-size: 2vh;
+}
+
+#alert{
+  display: none;
+  z-index: 9999;
+  position: absolute;
+  top: 3vh;
+  margin-left: 70vh;
+  width: 50vh;
+  text-align: center;
+  padding: 5px;
+  background-color: #222222;
+  color: white;
+  font-family: Graphik,Helventica Neue,Helvetica,Arial,sans-serif;
+  font-size: 14px;
+}
+
+.closebtn{
+  float: right;
+  font-size: 18px;
+}
+
+@media (max-width: 1440px){
+  .flex-container{
+    margin-left: 67vh;
+  }
+  .modal-content {
+   margin-right: 5vh;
+   margin-left: 5vh;
+   border-radius: 2vh 2vh 0px 0px;
+   position: fixed;
+   bottom: 0;
+   height: 90vh;
+   width: 207vh;
+   background-color: #fefefe;
+  }
+  .modalheader {
+  height: 5vh;
+  width: 207vh;
+  color: black;
+  z-index: 9999;
+  }
+}
+
+@media (max-width: 1024px){
+  .flex-container{
+    margin-left: 57vh;
+  }
+  .modal-content {
+   margin-right: 5vh;
+   margin-left: 5vh;
+   border-radius: 2vh 2vh 0px 0px;
+   position: fixed;
+   bottom: 0;
+   height: 90vh;
+   width: 142vh;
+   background-color: #fefefe;
+  }
+  .modalheader {
+  height: 5vh;
+  width: 142vh;
+  color: black;
+  z-index: 9999;
+  }
+}
+
+@media (max-width: 770px) {
+  .nav {
+    width: 116vh;
+  }
+
+  .nav-flex-container {
+    margin-left: 7vh;
+  }
+
+  .home-flex-container {
+    flex-direction: column;
+  }
+
+  .home-text {
+    margin-top: 10vh;
+    margin-left: 7vh;
+  }
+
+  .home-text h1 {
+    font-size: 8vh;
+  }
+
+  .home-text p {
+    font-size: 20px;
+  }
+
+  #home {
+    height: 120vh;
+  }
+
+  .projects-flex-container {
+    margin: 0;
+    padding-left: 0px auto;
+    width: 70vh;
+  }
+
+  .heading {
+    height: 0;
+    width: 0;
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+  }
+
+  .titles {
+    margin: 0;
+    padding: 0;
+    flex-wrap: no-wrap;
+  }
+
+  .titles .hide {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+  .footer {
+    width: 113vh;
+  }
+  .modal-content {
+   margin-right: 0;
+   margin-left: 0;
+   border-radius: 2vh 2vh 0px 0px;
+   position: fixed;
+   bottom: 0;
+   height: 90vh;
+   width: 116vh;
+   background-color: #fefefe;
+  }
+  .modalheader {
+  height: 5vh;
+  width: 116vh;
+  color: black;
+  z-index: 9999;
+  }
+}
+
+@media (max-width: 450px) {
+  .nav {
+    width: 100vh;
+  }
+
+  .nav-flex-container {
+    margin-left: 7vh;
+  }
+
+  .home-flex-container {
+    flex-direction: column;
+  }
+
+  .home-text {
+    margin-top: 10vh;
+    margin-left: 7vh;
+  }
+
+  .home-text h1 {
+    font-size: 8vh;
+  }
+
+  .home-text p {
+    font-size: 20px;
+  }
+
+  #home {
+    height: 120vh;
+  }
+
+  .projects-flex-container {
+    margin: 0;
+    padding-left: 0px auto;
+    width: 70vh;
+  }
+
+  .heading {
+    height: 0;
+    width: 0;
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+  }
+
+  .titles {
+    margin: 0;
+    padding: 0;
+    flex-wrap: no-wrap;
+  }
+
+  .titles .hide {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+  .footer {
+    width: 97vh;
+  }
+  .modal-content {
+   margin-right: 0;
+   margin-left: 0;
+   border-radius: 2vh 2vh 0px 0px;
+   position: fixed;
+   bottom: 0;
+   height: 110vh;
+   width: 100vh;
+   background-color: #fefefe;
+  }
+  .modalheader {
+  height: 5vh;
+  width: 100vh;
+  color: black;
+  z-index: 9999;
+  }
+}
+
+@media (max-width: 320px){
+  .footer{
+     margin-top: 50vh;
+   }
+}
+
+
+
