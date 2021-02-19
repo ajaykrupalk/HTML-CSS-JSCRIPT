@@ -1,0 +1,149 @@
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>srcCODE | Ajay Krupal K.</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
+  </head>
+<body id="main">
+  <script>alert("UNDER CONSTRUCTION!!!")</script>
+  <div class="nav">
+    <div class="nav-flex-container">
+      <div class="git">
+        <a href="https://github.com/ajaykrupalk"><img src="github.png"></a>
+      </div>
+      <div class="search-container">
+        <form>
+          <input type="text" placeholder="Search for projects" name="search">
+        </form>
+      </div>
+    </div>
+  </div>
+  <section id="home">
+    <div class="home-flex-container">
+      <div class="home-text">
+        <h1>Make it happen.<br>Shock Everyone.</h1>
+        <p>Learning to code is fun. But it is more fun with PROJECTS!!!</p>
+      </div>
+      <div class="home-pic">
+        <img src="studying.jpg">
+      </div>
+    </div>
+  </section>
+  <section id="project">
+    <div class="projects-flex-container">
+      <div class="heading">
+        <h3>Choose any project</h3>
+        <p>View some of the popular projects.</p>
+      </div>
+      <div class="titles">
+        <div id="btn" onclick="document.getElementById('modal1').style.display='block'; document.querySelector('html,body').style.overflow='hidden'">
+          <img src="github.png">
+          <h4>PYTHON</h4>
+        </div>
+        <div type="button" onclick="document.getElementById('modal2').style.display='block'; document.querySelector('html,body').style.overflow='hidden'">
+          <img src="github.png">
+          <h4>JAVA</h4>
+        </div>
+        <div id="btn" type="button">
+          <img src="github.png">
+          <h4>SWIFT</h4>
+        </div>
+        <div id="btn" type="button">
+          <img src="github.png">
+          <h4>C#</h4>
+        </div>
+        <div class="hide" onclick=show()>
+          <h4 id="change" onclick=myFunc()>View more PROJECTS!!! &#8615;</h4>
+        </div>
+      </div>
+    </div>
+    <div class="flex-container-container" id="flex">
+  <div class="flex-container">
+        <div id="btn" type="button">
+          <img src="github.png">
+          <h4>SWIFT</h4>
+        </div>
+        <div id="btn" type="button">
+          <img src="github.png">
+          <h4>SWIFT</h4>
+        </div>
+        <div id="btn" type="button">
+          <img src="github.png">
+          <h4>SWIFT</h4>
+        </div>
+        <div id="btn" type="button">
+          <img src="github.png">
+          <h4>SWIFT</h4>
+        </div>
+  </div>
+</div>
+<div class="footer">
+&copy; Copyright 2021 srcCODE
+</div>
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <div class="modalheader" style="background-color: #7a7770">
+          <span class="close" onclick="document.getElementById('modal1').style.display='none'; document.querySelector('html,body').style.overflow='visible'">&times;</span>
+        </div>
+	<div class="modal-flexbox">
+		<div class="modal-title" style="background-color: #625F5A; color: #d3d3d3">
+			<h1>Martian Rover</h1>
+			<p>Using NASA's Mars Rover Photos API to collect photos captured by NASA's Curiosity, Oppturnity and Spirit rovers on Mars.</p>
+		</div>
+		<div style="background-color: #96C5FD; background-image: url(https://image.freepik.com/free-vector/mars-exploration-isometric-illustration-with-image-robotic-rover-moving-planet-surface_1284-33027.jpg); background-position: center; background-size: cover"></div>
+	</div>
+	<div class="code">
+  		<a class="code-content">Code</a>
+  		<div class="right-container">
+    		  <div type="button" onclick="document.getElementById('alert').style.display='block'">
+      			<img src="https://www.flaticon.com/svg/vstatic/svg/1828/1828954.svg?token=exp=1613375906~hmac=d04df6f29dbc6e544c6cc0b74feeb958">
+      			<h5>Share</h5>
+    		  </div>
+    		  <div>
+      			<img src="https://www.flaticon.com/svg/vstatic/svg/3580/3580085.svg?token=exp=1613376300~hmac=3f5e0e7b08a91ad1366c0596c0f6318d">
+      			<h5>Download</h5>
+		  </div>
+    		  <div>
+      			<img src="https://www.flaticon.com/svg/vstatic/svg/711/711284.svg?token=exp=1613378662~hmac=a0dc3225aac6ae072cac817e4d375424">
+      			<h5>Script</h5>
+    		  </div>
+   	        </div>
+        </div>
+	<div class="gist"><script src="https://gist.github.com/ajaykrupalk/c14a7b097926d54cb2e145c1494b70a7.js"></script></div>
+      </div>
+      <div id="alert">
+	<span class="closebtn" onclick="this.parentElement.style.display = 'none'">&times;</span>
+  	<p>Link has been copied to clipboard</p>
+      </div>
+    </div>
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <div class="modalheader" style="background-color: orange">
+          <span class="close" onclick="document.getElementById('modal2').style.display='none'; document.querySelector('html,body').style.overflow='visible'">&times;</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+  function show() {
+    if (document.getElementById('flex').style.display === "block") {
+      document.getElementById('flex').style.display = "none";
+    } else {
+      document.getElementById('flex').style.display = "block";
+    }
+  }
+  function myFunc() {
+	if (document.getElementById('flex').style.display === "block") {
+      document.getElementById("change").innerHTML = "View more PROJECTS!!! &#8615;";
+    } else {
+      document.getElementById("change").innerHTML = "View fewer PROJECTS!!! &#8613;";
+    }
+  }
+</script>
+</body>
+</html>
