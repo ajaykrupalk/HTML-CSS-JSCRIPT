@@ -1,0 +1,66 @@
+*{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+.loader{
+  height: 100%;
+  padding-top: 250px;
+  text-align: center;
+}
+h1{
+  font-family: 'Ubuntu', sans-serif;
+}
+p{
+  font-family: 'Noto Sans', sans-serif;
+}
+#one{
+  height: 100%;
+  background-color: #14213d;
+  color: #d3d3d3;
+  padding-top: 180px;
+  padding-left: 50px;
+  text-align: left;
+}
+#one>div>h1{
+  font-size: 80px;
+}
+#one>div>p{
+  font-size: 18px;
+  padding-top: 15px;
+}
+#one#one>div>a>img{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  text-align: center;
+  height: 24px;
+  width: 24px;
+  border-radius: 100px;
+  padding: 10px;
+  background: rgba(211,211,211, 0.4);
+}
+#one#one>div>a>img:hover{
+  background: rgba(211,211,211, 0.8);
+}
+#two{
+  height: 100%;
+  background-color: #013a63;
+  text-align: right;
+  padding-top: 100px;
+  padding-right: 50px;
+}
+#two>div>h1{
+  font-size: 40px;
+  color: #d2d2d2;
+}
+#three{
+  height: 100%;
+  background-color: #01497c;
+  padding-top: 120px;
+  padding-left: 50px;
+}
+#three>div>h1{
+  font-size: 40px;
+  color: #d1d1d1;
+}
