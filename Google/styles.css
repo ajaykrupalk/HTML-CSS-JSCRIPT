@@ -1,0 +1,88 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+#loader {
+  z-index: 1;
+  text-align: center;
+  display: none;
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes animatebottom {
+  from { opacity:0 } 
+  to { opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ opacity:0 } 
+  to{ opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  background-color: #212121;
+  height: 100vh;
+  width: 100%;
+}
+#search{
+  padding-top: 180px;
+  text-align: center;
+}
+
+#searchbar input{
+  margin: 5px auto;
+  padding: 5px;
+  height: 1.5em;
+  width: 30em;
+  background-color: #ced4da;
+  border-radius: 10px;
+  outline: none;
+}
+
+#buttons{
+  padding: 10px;
+}
+
+#buttons button{
+  background-color: #ced4da;
+  padding: 5px;
+  outline: 0;
+}
+
+#searchicons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#searchicons div{
+  margin: 5px;
+  background-color: #ced4da;
+  height: 80px;
+  width: 50px;
+  border-radius: 40px;
+  text-align: center;
+}
+
+#searchicons div img{
+  margin: 3px 3px 0 3px;
+  background-color: #fff;
+  border: .5px solid grey;
+  padding: 10px;
+  height: 22px;
+  width: 22px;
+  border-radius: 30px;
+}
+
+#searchicons div p{
+  font-size: 12px;
+}
