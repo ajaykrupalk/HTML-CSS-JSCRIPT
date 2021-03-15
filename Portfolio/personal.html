@@ -1,0 +1,164 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajay Krupal K</title>
+    <link rel="stylesheet" href="external.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body onload="myFunction()" class="animatepage">
+    <div id="loader">
+        <img src="spinner.svg">
+    </div>
+    <div id="main">
+        <section id="home">
+            <div class="home-content">
+                    <p id="hello">Hello,</p>
+                    <h1>I'm Ajay Krupal K.</h1>
+                    <p id="desc">Student at St. Joseph's College (Autonomous), Bangalore</p>
+            </div>
+            <div class="l-line">
+                <a id="img1"><img  src="linkedin.png" alt="linkedin"></a>
+                <a id="img2" href="https://github.com/ajaykrupalk"><img  src="gitdark.png"></a>
+            </div>
+            <div class="r-line">
+                <p>ajaykrupalk@gmail.com</p>
+            </div>
+        </section>
+        <section id="special">
+            <h2 class="pgtitle">what i do</h2>
+            <h3 class="main-title"><span>My</span> Specialization</h3>
+            <div class="specflex">
+                <div>
+                    <img src="webdev.svg">
+                    <h3>Web Development</h3>
+                    <p>Working with client and community, we deliver masterplans that create vibrant new places and spaces, attract people, and encourage investment through.</p>
+                </div>
+                <div>
+                    <img src="mobdev.svg">
+                    <h3>Mobile Coding</h3>
+                    <p>Working with client and community, we deliver masterplans that create vibrant new places and spaces, attract people, and encourage investment through.</p>
+                </div>
+                <div>
+                    <img src="deskdev.svg">
+                    <h3>Illustration</h3>
+                    <p>Working with client and community, we deliver masterplans that create vibrant new places and spaces, attract people, and encourage investment through.</p>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <h2 class="pgtitle">projects</h2>
+            <h3 class="main-title"><span>My</span> Work</h3>
+            <div class="proj-flex">
+                <div>
+                    <img src="proj1.png">
+                    <h3>Portfolio CV</h3>
+                    <p>March 2021<br>An application to showcase my portfolio<br>built using HTML, CSS and Javascript</p>
+                </div>
+                <div>
+                    <img src="proj2.png">
+                    <h3>srccode</h3>
+                    <p>February 2021<br>An application to showcase my projects<br>built using HTML, CSS and Javascript</p>
+                </div>
+                <div>
+                    <img src="Mask Group.png">
+                    <h3>Projects</h3>
+                </div>
+            </div>
+        </section>
+        <section id="resume">
+            <h2 class="pgtitle">resume</h2>
+            <div class="main">
+                <h3 class="main-title">Education</h3>
+                <p><b style="color: #b87c7c;">Bachelor of Computer Applications</b><br>June 2019-Present</p>
+            </div>
+            <h3 class="main-title" style="text-align: center;">Achievements</h3>
+            <div class="tabs">
+                <button class="tablinks" onclick="openTab(event,'tab1')" id="defaultOpen">Reports</button>
+                <button class="tablinks" onclick="openTab(event,'tab2')">Events</button>
+                <button class="tablinks" onclick="openTab(event,'tab3')">Others</button>
+            </div>
+            <div id="tab1" class="tabcontent">
+                <h3>Tab 1</h3>
+                <p>Contents</p>
+            </div>
+            <div id="tab2" class="tabcontent">
+                <h3>Tab 2</h3>
+                <p>Contents</p>
+            </div>
+            <div id="tab3" class="tabcontent">
+                <h3>Tab 3</h3>
+                <p>Contents</p>
+            </div>
+        </section>
+        <section id="about">
+            <h2 class="pgtitle">about</h2>
+            <div class="skillbar">
+                <p>HTML</p>
+                <div class="container">
+                    <div class="skills html"></div>
+                </div>
+                <p>CSS</p>
+                <div class="container">
+                    <div class="skills css"></div>
+                </div>
+                <p>Javascript</p>
+                <div class="container">
+                    <div class="skills jscript"></div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2 class="pgtitle">contact</h2>
+            <div class="contflex">
+                <div>
+                    <h3><span>Karnataka, </span>India</h3>
+                    <p>Bangalore</p>
+                    <div id="email">
+                        ajaykrupalk@gmail.com
+                    </div>
+                </div>
+                <div>
+                    <form>
+                        <fieldset>
+                            <legend>Contact</legend>
+                            <input type="text" placeholder="Name">
+                            <input type="email" placeholder="Email">
+                            <textarea placeholder="Message"></textarea>
+                            <input type="submit" value="Submit">
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div> 
+</body>
+<script>
+    function openTab(evt, tabname) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the link that opened the tab
+  document.getElementById(tabname).style.display = "block";
+  evt.currentTarget.className += " active";
+ }
+ document.getElementById("defaultOpen").click();
+</script>
+</html>
