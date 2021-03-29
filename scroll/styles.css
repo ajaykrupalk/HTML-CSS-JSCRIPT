@@ -31,6 +31,7 @@
   cursor: pointer;
 }
 .modal{
+  z-index: 1;
   height: 20em;
   width: 30em;
   background-color: red;
