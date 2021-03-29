@@ -11,6 +11,7 @@
   overflow-y: scroll;
   overflow-x: hidden;
   position: absolute;
+  z-index: -1;
 }
 ::-webkit-scrollbar {
   display:none;
@@ -37,4 +38,5 @@
   margin: 20px auto;
   border-radius: 10px;
   display: none;
+  z-index: 1;
 }
