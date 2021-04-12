@@ -37,6 +37,7 @@
 }
 .mac-window{
   display: none;
+  z-index: -1;
 }
 .red:hover{
   background-color: red;
